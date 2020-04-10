@@ -6,4 +6,18 @@ public class Triangulo extends Poligono {
 		// TODO Auto-generated constructor stub
 	}
 
+	@Override
+	public double area() {
+		return super.getBase() * super.getAltura() / 2;
+	}
+
+	@Override
+	public double perimetro() {
+		double cateto = super.getBase()/2;
+		double hipotenusa = Math.pow(cateto, 2) + Math.pow(super.getAltura(),2);
+		hipotenusa = Math.sqrt(hipotenusa);
+		return super.getBase()*hipotenusa + hipotenusa * super.getBase() + super.getBase() * super.getBase();
+	}
+
+	
 }
