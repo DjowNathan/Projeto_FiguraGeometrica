@@ -21,6 +21,12 @@ public class Retangulo extends Poligono implements Diagonal {
 	public double perimetro() {
 		return 2 * super.getAltura() + 2 * super.getBase();
 	}
+
+	@Override
+	public String toString() {
+		return "Retangulo [calcDiagonal()=" + calcDiagonal() + ", area()=" + area() + ", perimetro()=" + perimetro()
+				+ "]";
+	}
 	
 	
 

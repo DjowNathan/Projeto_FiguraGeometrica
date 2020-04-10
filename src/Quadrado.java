@@ -19,6 +19,12 @@ public class Quadrado extends Poligono implements Diagonal {
 	public double perimetro() { 
 		return 4 * super.getAltura();
 	}
+
+	@Override
+	public String toString() {
+		return "Quadrado [calcDiagonal()=" + calcDiagonal() + ", area()=" + area() + ", perimetro()=" + perimetro()
+				+ "]";
+	}
 	
 	
 	

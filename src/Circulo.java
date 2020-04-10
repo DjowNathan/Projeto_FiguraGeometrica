@@ -19,4 +19,9 @@ public class Circulo extends Figura {
 		return perimetro;
 	}
 
+	@Override
+	public String toString() {
+		return "Circulo [area()=" + area() + ", perimetro()=" + perimetro() + "]";
+	}
+	
 }
