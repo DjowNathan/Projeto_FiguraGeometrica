@@ -1,11 +1,10 @@
 
 public class Quadrado extends Poligono implements Diagonal {
 
-	public Quadrado(double base, double altura) {
-		super(base, altura);
-		// TODO Auto-generated constructor stub
+	public Quadrado (double lado) {
+		super(lado, lado);
 	}
-
+	
 	@Override
 	public double calcDiagonal() {
 		// TODO Auto-generated method stub
@@ -14,9 +13,14 @@ public class Quadrado extends Poligono implements Diagonal {
 
 	@Override
 	public double area() {
-		// TODO Auto-generated method stub
-		return super.area();
+		return Math.pow(super.getAltura(), 2);
 	}
+
+	@Override
+	public double perimetro() { 
+		return 4 * super.getAltura();
+	}
+	
 	
 	
 }
