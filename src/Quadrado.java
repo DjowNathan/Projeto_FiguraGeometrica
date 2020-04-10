@@ -7,8 +7,7 @@ public class Quadrado extends Poligono implements Diagonal {
 	
 	@Override
 	public double calcDiagonal() {
-		// TODO Auto-generated method stub
-		return 0;
+		return super.getAltura() * Math.sqrt(2);
 	}
 
 	@Override

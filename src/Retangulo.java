@@ -7,8 +7,9 @@ public class Retangulo extends Poligono implements Diagonal {
 
 	@Override
 	public double calcDiagonal() {
-		// TODO Auto-generated method stub
-		return 0;
+		return Math.sqrt(
+					Math.pow(super.getAltura(), 2) + Math.pow(super.getBase(), 2)
+				);
 	}
 
 	@Override
